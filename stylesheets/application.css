@@ -12,7 +12,7 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
     #header > h1 {
-        background-image: url(../images/logo2x.png);
+        background-image: url(../images/logo@2x.png);
         background-size: 38px 40px;
     }
 }
@@ -967,7 +967,7 @@ input[type="radio"]:disabled, input[type="checkbox"]:disabled {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
     select {
-        background: url(../images/select2x.png) no-repeat right #fff;
+        background: url(../images/select@2x.png) no-repeat right #fff;
         background-size: 18px 16px;
     }
 }
