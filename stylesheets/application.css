@@ -26,7 +26,7 @@ body {
     font-size: 14px;
     line-height: 1.3;
     font-family: "helvetica neue", helvetica, arial, sans-serif;
-    font-smoothing: antialiased;
+    font-smooth: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -47,7 +47,7 @@ a:visited {
 }
 
 #main {
-    background-color: #eeeeee;
+    background-color: #fafafa;
     padding: 0px 20px;
 }
 
@@ -102,9 +102,9 @@ h2 {
 }
 
 #sidebar a.selected {
-    background-color: #eeeeee;
+    background-color: #fafafa;
     background-position: inherit;
-    color: #3d454c;
+    color: #1f7099;
     padding: inherit;
     margin-left: inherit;
     line-height: 1.3em;
@@ -134,7 +134,7 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 /**********************************************************/
 
 #header {
-    background-color: #29333a;
+    background-color: #2996cc;
     min-height: 5em;
     padding: 0px;
 }
@@ -170,7 +170,7 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 /* TOP-MENU */
 /**********************************************************/
 #top-menu {
-    background: #000;
+    background: #0f384c;
     padding: 7px 20px 2px 25px;
     font-size: 0.9em;
 }
@@ -178,7 +178,7 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 #top-menu a {
     margin-right: 15px;
     font-weight: normal;
-    color: #9da2a6;
+    color: #6ab1d4;
 }
 
 #top-menu a:hover {
@@ -193,7 +193,7 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 #main-menu {
     left: 0px;
     width: 100%;
-    background-color: #3d454c;
+    background-color: #1f7099;
     font-weight: 500;
     position: relative;
     height: auto;
@@ -214,14 +214,16 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 }
 
 #main-menu li > a {
-    color: #9da2a6;
+    color: #6ab1d4;
+    margin: 1px;
 }
 
 #main-menu li a:hover,
 #main-menu li a.selected,
 #main-menu li a.selected:hover {
-    background: none;
+    background: #6ab1d4;
     color: #fff;
+    border-radius: 3px;
 }
 
 #main-menu .menu-button {
@@ -246,7 +248,11 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 
 /* new object + button */
 #main-menu li a.new-object {
-    background-color: #3d454c;
+    background-color: #2996cc;
+}
+
+#main-menu li a.new-object:hover {
+    background-color: #6ab1d4;
 }
 
 #main-menu .menu-children {
@@ -265,14 +271,14 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 }
 
 #main-menu .menu-children li a {
-    background: #3d454c;
-    color: #9da2a6;
+    background: #1f7099;
+    color: #6ab1d4;
     font-weight: bold;
 }
 
 #main-menu .menu-children li a:hover {
     color: #fff;
-    background: #3d454c;
+    background: #1f7099;
 }
 
 /* tab buttons*/
@@ -282,7 +288,7 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
     right: 0;
     width: 60px;
     height: 100%;
-    background: #3d454c;
+    background: #1f7099;
     bottom: 0;
     border: 0px;
 }
@@ -297,14 +303,14 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
     width: 25px;
     bottom: 0px;
     border-radius: 0px;
-    background: #3d454c;
-    color: #9da2a6;
+    background: #1f7099;
+    color: #6ab1d4;
     font-weight: bold;
 }
 
 #main-menu button.tab-left:hover,
 #main-menu button.tab-right:hover {
-    background-color: #3d454c;
+    background-color: #1f7099;
     color: #fff;
 }
 
@@ -330,7 +336,7 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 
 #main-menu button.tab-left.disabled,
 #main-menu button.tab-right.disabled {
-    background-color: #3d454c;
+    background-color: #1f7099;
     cursor: unset;
     color: #777;
 }
@@ -339,7 +345,9 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
 /* SIDEBAR */
 /**********************************************************/
 #sidebar {
+    background-color: #fafafa;
     line-height: 1.3;
+    width: auto;
 }
 
 #sidebar h3 {
@@ -492,7 +500,7 @@ div#content #context-menu li a {
 
 div#content #context-menu li:hover {
     background: #f2f4f5;
-    color: #3d454c;
+    color: #1f7099;
     border: 1px solid #f2f4f5;
     border-radius: 0px;
 }
@@ -510,7 +518,7 @@ div#content #context-menu a.disabled:hover {
 
 .contextual .drdn-items > a:hover {
     background-color: #f2f4f5;
-    color: #3d454c;
+    color: #1f7099;
     border: 1px solid #f2f4f5;
     border-radius: 0px;
 }
@@ -557,11 +565,10 @@ div.modal {
 
 .ui-dialog.modal .ui-widget-header {
     border: 0px;
-    color: #3d454c;
+    color: #1f7099;
     background: #fafafa;
     padding-top: 18px;
     padding-bottom: 18px;
-    color: #3d454c;
     font-size: 24px;
     font-weight: normal;
     text-align: center;
@@ -609,13 +616,13 @@ div.modal {
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
     background: #f2f4f5;
-    color: #3d454c;
+    color: #1f7099;
     border: 1px solid #f2f4f5;
     border-radius: 0px;
 }
 
 .ui-widget-header .ui-datepicker-title {
-    color: #3d454c;
+    color: #1f7099;
 }
 
 .ui-state-default,
@@ -733,7 +740,7 @@ input[type="submit"],
 input[type="submit"][name="continue"],
 input[type="submit"].small,
 input[type="submit"].button-small {
-    color: #9da2a6;
+    color: #6ab1d4;
     line-height: 30px;
     font-weight: 500;
     text-align: center;
@@ -788,7 +795,7 @@ input[type="submit"].button-small:hover {
     -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0 1px 1px;
     -moz-box-shadow: rgba(0, 0, 0, 0.08) 0 1px 1px;
     box-shadow: rgba(0, 0, 0, 0.08) 0 1px 1px;
-    color: #3d454c;
+    color: #1f7099;
     -webkit-transition-duration: 0.05s;
     -moz-transition-duration: 0.05s;
     -o-transition-duration: 0.05s;
@@ -818,7 +825,7 @@ input[type="number"],
 fieldset#filters td.values input {
     padding: 1px 10px;
     background-color: #fff;
-    color: #3d454c;
+    color: #1f7099;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -856,7 +863,7 @@ select {
     z-index: 1;
     padding: 4px 30px 4px 10px;
     background-color: #fff;
-    color: #3d454c;
+    color: #1f7099;
     cursor: pointer;
     border: 1px solid #e0e2e3;
     background: url(../images/select.png) no-repeat right #fff;
@@ -991,7 +998,7 @@ select[multiple="multiple"] {
 
 textarea {
     background-color: #fff;
-    color: #3d454c;
+    color: #1f7099;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -1267,8 +1274,8 @@ div.issue,
 div.person,
 div.contact,
 div.deal {
-    border: 0px !important;
-    padding: 10px !important;
+    background: #fafafa;
+    border: 1px solid #d7d7d7;
 }
 
 table.progress td {
@@ -1284,11 +1291,11 @@ div.details {
 /**********************************************************/
 @media all and (max-width: 899px) {
     body #header {
-        background-color: #3d454c;
+        background-color: #1f7099;
     }
 
     body .flyout-menu {
-        background-color: #29333a;
+        background-color: #0f384c;
     }
 
     body .flyout-menu__avatar {
@@ -1307,7 +1314,7 @@ div.details {
     }
 
     body .flyout-menu a {
-        color: #9da2a6;
+        color: #6ab1d4;
     }
 
     body .flyout-menu h3 {
